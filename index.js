@@ -1,4 +1,4 @@
-var isSquare = function (n) {
+/*var isSquare = function (n) {
 	if (Math.sqrt(n) % 1 == 0) {
 		return true;
 	}
@@ -8,4 +8,20 @@ var isSquare = function (n) {
 
 
 }
-console.log(isSquare(26))
+console.log(isSquare(26)) */
+
+function getCount(str) {
+
+	let strArr = str.toLowerCase().split('');
+	const vowels = ['a', 'e', 'i', 'o', 'u'];
+	let count = 0;
+
+	for (char of strArr) {
+		if (vowels.includes(char)) {
+			count++;
+		}
+	}
+	return count;
+}
+
+console.log(getCount('AfgfOhgi ghOO')); 
