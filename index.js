@@ -26,7 +26,7 @@ console.log(isSquare(26)) */
 // 	return count;
 // }
 
-// console.log(getCount('AfgfOhgi ghOO')); 
+// console.log(getCount('AfgfOhgi ghOO'));
 
 //=================================================================//
 
@@ -59,7 +59,7 @@ console.log(isSquare(26)) */
 // 	// moment of truth
 // }
 
-// console.log(lovefunc(3, 4)) 
+// console.log(lovefunc(3, 4))
 
 //=================================================================//
 
@@ -98,22 +98,30 @@ console.log(isSquare(26)) */
 
 //=================================================================//
 
-function DNAtoRNA(dna) {
+// function DNAtoRNA(dna) {
 
-	let str = '';
+// 	let str = '';
 
-	dna.toUpperCase();
+// 	dna.toUpperCase();
 
-	for (let char of dna) {
-		if (char == 'T') {
-			str += 'U'
-		}
-		else {
-			str += char
-		}
-	}
-	return str;
-	// create a function which returns an RNA sequence from the given DNA sequence
+// 	for (let char of dna) {
+// 		if (char == 'T') {
+// 			str += 'U'
+// 		}
+// 		else {
+// 			str += char
+// 		}
+// 	}
+// 	return str;
+// }
+
+// console.log(DNAtoRNA('TTTT'));
+
+//=================================================================//
+
+function findNeedle(haystack) {
+	return `found the needle at position ${haystack.indexOf("needle")}`
 }
 
-console.log(DNAtoRNA('TTTT'));
+let haystack = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 5, 4, 3, 4, 5, 6, 67, 5, 5, 3, 3, 4, 2, 34, 234, 23, 4, 234, 324, 324, 'needle', 1, 2, 3, 4, 5, 5, 6, 5, 4, 32, 3, 45, 54];
+console.log(findNeedle(haystack));
